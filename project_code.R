@@ -1,8 +1,5 @@
-####################  CAPSTONE PROJECT  ########################
-
-
 #Setting up working directory
-setwd("C:/Users/mchoudhu/Documents/PGP-BABI")
+setwd("C:/Users/mchoudhu/Documents/*********")
 
 #Installing and loading necessary packages
 install.packages("readxl")
@@ -420,7 +417,7 @@ rf.cv <- rf.crossValidation(data_rf, data_train_rf,
                             p=0.10, n=99, ntree=501) 
 
 
-?rf.cro
+
 
 rfcv(data_train_rf, data_train_rf$Target.Variable, cv.fold=5, scale="log", step=0.5)
 
@@ -611,7 +608,7 @@ knnFit.rcv <- train(Target.Variable ~ ., data = data_train_knn, method = "knn",
 
 knnFit.rcv
 knnFit.rcv$bestTune
-??knn
+
 knn_19<-knn(train=data_train_knn[,-36],test=data_test_knn[,-36], cl=data_train_knn[,36],k=19)
 knn_19
 plot(knn_19)
@@ -816,7 +813,7 @@ plot(roc(data_test_bag$Target.Variable, data_test_bag$xgb.pred.test, direction="
 
 
 
-###################################  THE END  #############################################
+
 
 
 
